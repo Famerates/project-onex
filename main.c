@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    printf("\nA sample C program\n\n");
+    printf("\nType anything and the program will type it back\n");
+    char inputInitial[32];
+    fgets(inputInitial, 32,stdin);
+    printf("\nYou typed: %s",inputInitial,"\n");
     return 0;
 }
